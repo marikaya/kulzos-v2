@@ -1,0 +1,15 @@
+:root {
+  --bg-color: #fff;
+  --text-color: #303030;
+  --link-color: #292929;
+  --link-hover-color: #181818;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: 14px;
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
