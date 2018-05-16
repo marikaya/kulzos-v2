@@ -3,6 +3,9 @@
   --text-color: #303030;
   --link-color: #292929;
   --link-hover-color: #181818;
+  --input-border-color: #292929;
+  --input-background-color: #181818;
+  --input-color: #cbcbcb;
 }
 
 body {
@@ -12,4 +15,26 @@ body {
   font-family: "Noto Sans", sans-serif;
   margin: 0;
   padding: 0;
+}
+
+button, select, .btn, input[type="text"], input[type="textarea"], input[type="search"], input[type="email"] {
+  font-size: 14px;
+}
+
+.btn {
+  padding: .75rem;
+}
+
+.container {
+  max-width: 1280px;
+}
+
+.top-search {
+  margin-left: 35px;
+  background-color: var(--input-background-color);
+  color: var(--input-color);
+  border: var(--input-border-color);
+  min-width: 400px;
+  padding: .75rem;
+  margin-right: 10px;
 }
