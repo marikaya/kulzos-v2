@@ -1,27 +1,97 @@
 :root {
-  --bg-color: #fff;
-  --text-color: #303030;
-  --link-color: #292929;
+  --bg-color: #f8f8f8;
+  --logo-color: #697384;
+  --text-color: #697384;
+  --link-color: #323232;
   --link-hover-color: #181818;
+  --navbar-background-color: #fff;
+  --navbar-bottom-color: #fff;
+  --navbar-link-color: #3880ff;
+  --search-box-background: #f8f8f8;
+  --header-bottom-border-color: #f7f7f7;
+  --notification-background: #3880ff;
+  --notification-color: white;
   --input-border-color: #292929;
-  --input-background-color: #181818;
+  --input-background-color: #f8f8f8;
   --input-color: #cbcbcb;
+  --left-side-background: #fff;
+  --topic-list-header-background: transparent;
+  --topic-list-border: #e8e8e8;
 }
 
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-size: 14px;
-  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-family: "Muli", sans-serif;
   margin: 0;
   padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -1px;
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--link-hover-color);
 }
 
 button, select, .btn, input[type="text"], input[type="textarea"], input[type="search"], input[type="email"] {
   font-size: 14px;
 }
 
-.btn {
+.card {
+  border: none;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, .05);
+}
+
+.main-navbar {
+  background-color: var(--navbar-background-color);
+}
+
+.header-bottom {
+  padding-top: 61px;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.04);
+  background-color: var(--navbar-bottom-color);
+}
+
+.header-bottom ul {
+  margin: 0;
+  padding: 0;
+}
+
+.header-bottom ul li {
+  list-style-type: none;
+  display: inline-block;
+  font-size: 13px;
+  border-right: solid 1px var(--header-bottom-border-color);
+}
+
+.header-bottom ul li a {
+  display: block;
+  padding: 10px;
+}
+
+.navbar-brand {
+  margin-right: 125px;
+}
+
+.navbar .btn {
   padding: .75rem;
 }
 
@@ -31,10 +101,141 @@ button, select, .btn, input[type="text"], input[type="textarea"], input[type="se
 
 .top-search {
   margin-left: 35px;
-  background-color: var(--input-background-color);
+  background-color: var(--search-box-background);
   color: var(--input-color);
   border: var(--input-border-color);
   min-width: 400px;
   padding: .75rem;
   margin-right: 10px;
+}
+
+.navbar-brand {
+  font-size: inherit;
+  padding: 0;
+}
+
+#kulzos-logo {
+  opacity: 0.9;
+  transition: 0.3s;
+  width: 90px;
+}
+
+#kulzos-logo:hover {
+  opacity: 1;
+}
+
+#kulzos-logo .st0 {
+  fill: var(--logo-color);
+}
+
+.navbar-search-btn .btn {
+  padding: 0.40rem;
+  min-width: 50px;
+}
+
+.header-search-icon {
+  font-size: 20px;
+}
+
+.header-user-bar li {
+  position: relative;
+}
+
+.header-user-bar a:not(.dropdown-item) {
+  font-size: 28px;
+  margin-left: 15px;
+  color: var(--navbar-link-color);
+  top: 3px;
+  position: relative;
+}
+
+.notification-count {
+  background: var(--notification-background);
+  color: var(--notification-color);
+  border-radius: 50%;
+  height: 20px;
+  line-height: 16px;
+  font-size: 11px;
+  font-weight: 900;
+  width: 21px;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  right: 1px;
+  border: solid 2px var(--navbar-background-color);
+  top: -3px;
+  z-index: 1;
+}
+
+.header-user-bar .dropdown-toggle::after {
+  border: none;
+  margin: 0;
+}
+
+.content {
+  padding-top: 101px;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.left-content {
+  flex: 1 1 20%;
+  max-width: 20%;
+  background-color: var(--left-side-background);
+}
+
+.right-content {
+  flex: 1 1 80%;
+  max-width: 80%;
+  padding: 15px 30px;
+}
+
+.topic-list-header {
+  background: var(--topic-list-header-background);
+  font-size: 16px;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topic-list-header p {
+  margin: 0
+}
+
+.refresh-topic-list {
+  align-self: flex-end;
+}
+
+.topic-list {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.topic-list li {
+  border-bottom: solid 1px var(--topic-list-border);
+  list-style-type: none;
+}
+
+.topic-list li a {
+  display: block;
+  padding: 5px 20px;
+}
+
+.topic-title {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.topic-entry-list {
+  padding: 10px 0;
 }
