@@ -541,7 +541,7 @@ header {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: var(--entry-background_color);
+  background-color: var(--entry-background-color);
   background-clip: border-box;
   border-radius: .25rem;
 }

@@ -115,7 +115,7 @@ $(document).ready(function () {
     document.documentElement.style.setProperty('--entry-meta-left-link', entry_meta_left_link);
     document.documentElement.style.setProperty('--entry-meta-left-link-hover', entry_meta_left_link_hover);
     document.documentElement.style.setProperty('--entry-meta-right-link', entry_meta_right_link);
-    document.documentElement.style.setProperty('--entry-meta-right-lin-hover', entry_meta_right_link_hover);
+    document.documentElement.style.setProperty('--entry-meta-right-link-hover', entry_meta_right_link_hover);
     document.documentElement.style.setProperty('--entry-background-color', entry_background_color);
   }
 
@@ -150,7 +150,7 @@ $(document).ready(function () {
     let entry_meta_left_link_hover = "#434343";
     let entry_meta_right_link = "#b0b0b0";
     let entry_meta_right_link_hover = "#434343";
-    let entry_background_color = "#202225";
+    let entry_background_color = "#2a2c30";
 
     document.documentElement.style.setProperty('--bg-color', bg_color);
     document.documentElement.style.setProperty('--logo-color', logo_color);
@@ -181,7 +181,7 @@ $(document).ready(function () {
     document.documentElement.style.setProperty('--entry-meta-left-link', entry_meta_left_link);
     document.documentElement.style.setProperty('--entry-meta-left-link-hover', entry_meta_left_link_hover);
     document.documentElement.style.setProperty('--entry-meta-right-link', entry_meta_right_link);
-    document.documentElement.style.setProperty('--entry-meta-right-lin-hover', entry_meta_right_link_hover);
+    document.documentElement.style.setProperty('--entry-meta-right-link-hover', entry_meta_right_link_hover);
     document.documentElement.style.setProperty('--entry-background-color', entry_background_color);
   }
 });
