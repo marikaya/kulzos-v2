@@ -337,8 +337,9 @@ header {
   margin-left: 35px;
   background-color: var(--search-box-background);
   color: var(--input-color);
-  font-family: 'lato_trbold', sans-serif;
+  font-family: 'LatoLatinWeb', sans-serif;
   border: var(--input-border-color);
+  font-weight:bold;
   min-width: 400px;
   padding: .75rem;
   margin-right: 10px;
