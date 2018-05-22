@@ -30,7 +30,8 @@ html {
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
     font-smoothing: antialiased;
-    -webkit-font-smoothing: antialiased;
+    -webkit-font-feature-settings: "kern" on, "liga" on, "calt" on, "onum", "pnum";
+    -webkit-font-smoothing: subpixel-antialiased;
     text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
 }
 
@@ -108,7 +109,7 @@ a:hover {
 }
 
 button, select, .btn, input[type="text"], input[type="textarea"], input[type="search"], input[type="email"] {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .card {
@@ -168,6 +169,7 @@ header {
   margin-left: 35px;
   background-color: var(--search-box-background);
   color: var(--input-color);
+  font-family: 'lato_trbold', sans-serif;
   border: var(--input-border-color);
   min-width: 400px;
   padding: .75rem;
